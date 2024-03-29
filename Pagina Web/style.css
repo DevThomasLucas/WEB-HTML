@@ -1,0 +1,214 @@
+body {
+    position: relative;  /* Posição relativa para controlar o posicionamento do texto */
+    background-color: rgb(62, 62, 178);  /* Cor de fundo do corpo */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;  /* Garante que o conteúdo da página ocupe pelo menos toda a altura da janela do navegador */
+    color: #ffffff;  
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+}
+
+.container {
+    display: flex; /* Define o conteúdo do contêiner como flexível */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+}
+
+/*----------------------------------header cabeçalho--------------------------------------------------*/
+
+header {
+    position: relative;
+    width: 100%;
+    height: 200px;               /* Altura do cabeçalho */
+    text-align: center;
+    
+}
+
+header img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;           /* Estica a imagem para cobrir todo o contêiner */
+    top: 50%;                    /* Posiciona a imagem a partir do meio do cabeçalho */
+    transform: translateY(-50%); /* Desloca a imagem para cima metade da sua própria altura, para centralizá-la verticalmente */
+    left: 0;
+}
+
+
+header h1 {
+
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: white; /* Cor do texto */
+    font-size: 40px; /* Tamanho da fonte */
+    text-shadow: 2px 2px 4px rgb(101, 100, 100); /* Sombra do texto */
+}
+
+
+.texto-corpo{
+
+    position: absolute;
+    left: 3%;
+    top: 250px;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    font-size: 20px; /* Tamanho da fonte */
+}
+
+/*---------------------------------------------------class---------------------------------------*/
+
+
+
+.primeira img{
+    
+    position: absolute;
+    bottom: 300px;
+    left: 40px;
+    width: 210px;
+    height: 300px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
+    
+}
+
+.primeira img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho da div */
+}
+
+
+.segunda img{
+    
+    position: absolute;
+    left: 430px;
+    bottom: 300px;
+    width: 210px;
+    height: 300px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
+}
+
+.segunda img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho da div */
+}
+
+.terceira img{
+    
+    position:  absolute;
+    left: 820px;
+    width: 210px;
+    height: 300px;
+    bottom: 300px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
+}
+
+.terceira img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho da div */
+}
+
+.quarta img{
+    
+    position:  absolute;
+    left: 1215px;
+    width: 210px;
+    height: 300px;
+    bottom: 300px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
+}
+
+.quarta img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho da div */
+}
+
+/*---------------------------------------tag----------------------------------------------*/
+
+.tag1{
+
+    position: absolute;
+    left: 40px;
+    bottom:100px;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-size: 12px; /* Tamanho da fonte */
+}
+
+.tag2{
+
+    position: absolute;
+    left: 440px;
+    bottom:100px;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-size: 12px; /* Tamanho da fonte */
+}
+
+.tag3{
+
+    position: absolute;
+    left: 820px;
+    bottom:100px;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-size: 12px; /* Tamanho da fonte */
+}
+
+.tag4{
+
+    position: absolute;
+    left: 1215px;
+    bottom:100px;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-size: 12px; /* Tamanho da fonte */
+}
+
+
+/*--------------------------------------footer rodape------------------------------------*/
+
+footer {                    /*estrutura do rodapé*/
+    position: absolute;     /*relação absoluta em relação ao container pai*/
+    bottom: 0;              /*determina que ele ficara fixado na parte inferior*/
+    width: 100%;            /*garante que ele ocupara toda a largura disponivel*/
+    background-color: #333;
+    color: #fff;
+    padding: 5px 0;         /*tamanho do rodape*/
+}
+
+.inner-footer {         /*espaçamento entre as letras do rodape*/
+width: 80%;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.inner-footer p {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
